@@ -15,6 +15,7 @@
 @end
 
 @implementation TradeManager
+@synthesize openPorts = _openPorts;
 
 #pragma mark - init/shutdown
 - (id) init
@@ -23,6 +24,7 @@
     if(self)
     {
         _portRegistry = [[NSMutableDictionary dictionary] retain];
+        _openPorts = [[NSMutableArray array] retain];
         [self setupPortRegistry];
     }
     return self;
@@ -30,12 +32,14 @@
 
 - (void) dealloc
 {
+    [_openPorts release];
     [_portRegistry release];
     [super dealloc];
 }
 
 - (void) loadPriceTableForPortName:(NSString*)name
 {
+    [_openPorts addObject:name];
     PriceTable* newTable = [[PriceTable alloc] initFromPlistFile:name];
     [_portRegistry setObject:newTable forKey:name];
     [newTable release];
@@ -54,6 +58,15 @@
     return result;
 }
 
+- (NSString*) openPortAtIndex:(unsigned int)index
+{
+    NSString* result = nil;
+    if(index < [_openPorts count])
+    {
+        result = [_openPorts objectAtIndex:index];
+    }
+    return result;
+}
 
 #pragma mark - Singleton
 static TradeManager *singleton = nil;

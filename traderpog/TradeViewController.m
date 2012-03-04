@@ -18,6 +18,7 @@
     if (self) 
     {
         // set tab bar info
+        self.title = NSLocalizedString(@"Trade", @"Trade");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         
         TradeMain* rootController = [[TradeMain alloc] initWithNibName:@"TradeMain" bundle:nil];

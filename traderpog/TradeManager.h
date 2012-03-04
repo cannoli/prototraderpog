@@ -12,9 +12,12 @@
 @interface TradeManager : NSObject
 {
     NSMutableDictionary* _portRegistry;
+    NSMutableArray* _openPorts;
 }
+@property (nonatomic,retain) NSMutableArray* openPorts;
 
 - (PriceTable*) getPriceTableForPort:(NSString*)portName;
+- (NSString*) openPortAtIndex:(unsigned int)index;
 
 // singleton
 + (TradeManager*) getInstance;

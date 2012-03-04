@@ -72,7 +72,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
     
-    
+    NSString* portName = [[TradeManager getInstance] openPortAtIndex:[indexPath row]];
+    [cell.textLabel setText:portName];
     
     return cell;
 }
@@ -87,7 +88,8 @@
 - (NSInteger)tableView:(UITableView *)tv
  numberOfRowsInSection:(NSInteger)section
 {
-    NSInteger numRows = 0;
+    NSInteger numRows = [[[TradeManager getInstance] openPorts] count];
+    /*
 	if(0 == section)
     {
         NSString* curPort = [[GameManager getInstance] curPort];
@@ -97,6 +99,7 @@
             numRows = [[priceTable itemList] count];
         }
     }
+     */
     return numRows;
 }
 
