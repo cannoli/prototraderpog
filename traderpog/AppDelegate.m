@@ -3,12 +3,12 @@
 //  traderpog
 //
 //  Created by Shu Chiun Cheah on 3/2/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 GeoloPigs. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "FirstViewController.h"
+#import "TradeViewController.h"
 
 #import "SecondViewController.h"
 
@@ -21,7 +21,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    UIViewController *viewController1 = [[TradeViewController alloc] init];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];

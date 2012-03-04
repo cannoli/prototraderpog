@@ -3,7 +3,7 @@
 //  traderpog
 //
 //  Created by Shu Chiun Cheah on 3/2/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 GeoloPigs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
