@@ -69,8 +69,11 @@
     cell = [tv dequeueReusableCellWithIdentifier:cellIdentifier];
     if( nil == cell ) 
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
+    
+    
+    
     return cell;
 }
 

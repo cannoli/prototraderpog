@@ -15,4 +15,7 @@
 @property (nonatomic,retain) NSMutableArray* itemList;
 
 - (id) initFromPlistFile:(NSString*)plistFilename;
+- (NSString*) identifierAtIndex:(unsigned int)index;
+- (unsigned int) priceAtIndex:(unsigned int)index;
+
 @end

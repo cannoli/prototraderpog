@@ -8,6 +8,9 @@
 
 #import "PriceTable.h"
 
+static NSString* kIdentifier = @"Indetifier";
+static NSString* kPrice = @"Price";
+
 @implementation PriceTable
 @synthesize itemList = _itemList;
 
@@ -29,5 +32,25 @@
     [super dealloc];
 }
 
+#pragma mark - queries
+- (NSString*) identifierAtIndex:(unsigned int)index
+{
+    NSString* result = nil;
+    if(index < [_itemList count])
+    {
+        result = [[_itemList objectAtIndex:index] objectForKey:kIdentifier];
+    }
+    return result;
+}
+
+- (unsigned int) priceAtIndex:(unsigned int)index
+{
+    unsigned int result = 0;
+    if(index < [_itemList count])
+    {
+        result = [[[_itemList objectAtIndex:index] objectForKey:kPrice] unsignedIntValue];
+    }
+    return result;
+}
 
 @end

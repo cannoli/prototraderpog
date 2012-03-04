@@ -8,6 +8,8 @@
 
 #import "GameManager.h"
 #import "TradePorts.h"
+#import "TradeManager.h"
+#import "PriceTable.h"
 
 @implementation GameManager
 @synthesize curPort = _curPort;
@@ -26,6 +28,14 @@
 - (void) dealloc
 {
     [super dealloc];
+}
+
+#pragma mark - queries
+
+- (PriceTable*) getPriceTableForCurPort
+{
+    PriceTable* result = [[TradeManager getInstance] getPriceTableForPort:_curPort];
+    return result;
 }
 
 #pragma mark - Singleton

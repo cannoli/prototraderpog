@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class PriceTable;
 @interface GameManager : NSObject
 {
     NSString* _curPort;
 }
 @property (nonatomic,retain) NSString* curPort;
 
+- (PriceTable*) getPriceTableForCurPort;
 
 // singleton
 + (GameManager*) getInstance;
