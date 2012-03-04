@@ -7,26 +7,50 @@
 //
 
 #import "AppDelegate.h"
-
 #import "TradeViewController.h"
-
 #import "SecondViewController.h"
+#import "TradeManager.h"
+#import "GameManager.h"
+
+
+@interface AppDelegate (PrivateMethods)
+- (void) appInit;
+- (void) appShutdown;
+@end
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
+
+#pragma mark - private methods
+
+- (void) appInit
+{
+    [TradeManager getInstance];
+    [GameManager getInstance];
+}
+
+- (void) appShutdown
+{
+    [GameManager destroyInstance];
+    [TradeManager destroyInstance];
+}
+
+#pragma mark - app
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    UIViewController *viewController1 = [[TradeViewController alloc] init];
+    UIViewController *viewController1 = [[TradeViewController alloc] initWithNibName:@"TradeViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+    [self appInit];
     return YES;
 }
 
@@ -62,11 +86,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+    [self appShutdown];
 }
 
 /*

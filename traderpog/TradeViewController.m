@@ -18,10 +18,10 @@
     if (self) 
     {
         // set tab bar info
-        self.title = NSLocalizedString(@"Trade", @"Trade");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         
         TradeMain* rootController = [[TradeMain alloc] initWithNibName:@"TradeMain" bundle:nil];
+        [rootController setTitle:NSLocalizedString(@"Trade", @"Trade")];
         
         // add it to our navigation controller
         self.navController = [[[UINavigationController alloc] initWithRootViewController:rootController] autorelease];

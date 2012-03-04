@@ -7,16 +7,26 @@
 //
 
 #import "TradeMain.h"
+#import "TradeManager.h"
+#import "GameManager.h"
+#import "PriceTable.h"
 
 @implementation TradeMain
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self) 
+    {
         // Custom initialization
     }
     return self;
+}
+
+- (void)dealloc 
+{
+    [_tableView release];
+    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,9 +47,9 @@
 
 - (void)viewDidUnload
 {
+    [_tableView release];
+    _tableView = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -48,4 +58,55 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+#pragma mark UITableViewDataSource Methods 
+- (UITableViewCell *)tableView:(UITableView *)tv
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* cell = nil;
+    static NSString *cellIdentifier = @"DockedPort";
+    
+    cell = [tv dequeueReusableCellWithIdentifier:cellIdentifier];
+    if( nil == cell ) 
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+    }
+    return cell;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
+{
+	NSInteger numSections = 1;	
+	return numSections;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tv
+ numberOfRowsInSection:(NSInteger)section
+{
+    NSInteger numRows = 0;
+	if(0 == section)
+    {
+        NSString* curPort = [[GameManager getInstance] curPort];
+        PriceTable* priceTable = [[TradeManager getInstance] getPriceTableForPort:curPort];
+        if(priceTable)
+        {
+            numRows = [[priceTable itemList] count];
+        }
+    }
+    return numRows;
+}
+
+#pragma mark UITableViewDelegate Methods
+
+- (void)tableView:(UITableView *)tv
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+
+}
+/*
+- (CGFloat)tableView:(UITableView *)tv heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+}
+*/
 @end

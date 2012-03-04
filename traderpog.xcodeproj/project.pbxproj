@@ -18,8 +18,15 @@
 		4279DA621501E3CE00E603C6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4279DA611501E3CE00E603C6 /* SecondViewController.m */; };
 		4279DA641501E3CE00E603C6 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 4279DA631501E3CE00E603C6 /* second.png */; };
 		4279DA661501E3CE00E603C6 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4279DA651501E3CE00E603C6 /* second@2x.png */; };
-		4279DA691501E3CE00E603C6 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4279DA671501E3CE00E603C6 /* FirstViewController.xib */; };
+		4279DA691501E3CE00E603C6 /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4279DA671501E3CE00E603C6 /* TradeViewController.xib */; };
 		4279DA6C1501E3CE00E603C6 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4279DA6A1501E3CE00E603C6 /* SecondViewController.xib */; };
+		C4050CE415034351007DEF69 /* SanPan.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4050CE315034351007DEF69 /* SanPan.plist */; };
+		C4352A981502FD4300FC1A69 /* TradeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4352A971502FD4300FC1A69 /* TradeManager.m */; };
+		C4352AA21502FF5F00FC1A69 /* PlayerPort.m in Sources */ = {isa = PBXBuildFile; fileRef = C4352AA11502FF5F00FC1A69 /* PlayerPort.m */; };
+		C4352AA51503000700FC1A69 /* PriceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C4352AA41503000700FC1A69 /* PriceTable.m */; };
+		C4352AA815030F5D00FC1A69 /* Ponghai.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4352AA715030F5D00FC1A69 /* Ponghai.plist */; };
+		C4352AAB150315C500FC1A69 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4352AAA150315C500FC1A69 /* GameManager.m */; };
+		C4352AAE1503189200FC1A69 /* TradePorts.m in Sources */ = {isa = PBXBuildFile; fileRef = C4352AAD1503189200FC1A69 /* TradePorts.m */; };
 		C43F95041502EF1400D4E757 /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43F95031502EF1400D4E757 /* TradeViewController.m */; };
 		C43F95081502F12D00D4E757 /* TradeMain.m in Sources */ = {isa = PBXBuildFile; fileRef = C43F95061502F12D00D4E757 /* TradeMain.m */; };
 		C43F95091502F12D00D4E757 /* TradeMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43F95071502F12D00D4E757 /* TradeMain.xib */; };
@@ -42,8 +49,20 @@
 		4279DA611501E3CE00E603C6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		4279DA631501E3CE00E603C6 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		4279DA651501E3CE00E603C6 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		4279DA681501E3CE00E603C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		4279DA681501E3CE00E603C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TradeViewController.xib; sourceTree = "<group>"; };
 		4279DA6B1501E3CE00E603C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		C4050CE315034351007DEF69 /* SanPan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SanPan.plist; path = resources/SanPan.plist; sourceTree = "<group>"; };
+		C4352A961502FD4300FC1A69 /* TradeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeManager.h; sourceTree = "<group>"; };
+		C4352A971502FD4300FC1A69 /* TradeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeManager.m; sourceTree = "<group>"; };
+		C4352AA01502FF5F00FC1A69 /* PlayerPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerPort.h; sourceTree = "<group>"; };
+		C4352AA11502FF5F00FC1A69 /* PlayerPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerPort.m; sourceTree = "<group>"; };
+		C4352AA31503000700FC1A69 /* PriceTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceTable.h; sourceTree = "<group>"; };
+		C4352AA41503000700FC1A69 /* PriceTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceTable.m; sourceTree = "<group>"; };
+		C4352AA715030F5D00FC1A69 /* Ponghai.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Ponghai.plist; path = resources/Ponghai.plist; sourceTree = "<group>"; };
+		C4352AA9150315C500FC1A69 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		C4352AAA150315C500FC1A69 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		C4352AAC1503189200FC1A69 /* TradePorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradePorts.h; sourceTree = "<group>"; };
+		C4352AAD1503189200FC1A69 /* TradePorts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradePorts.m; sourceTree = "<group>"; };
 		C43F95021502EF1400D4E757 /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
 		C43F95031502EF1400D4E757 /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
 		C43F95051502F12D00D4E757 /* TradeMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeMain.h; sourceTree = "<group>"; };
@@ -69,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4279DA4D1501E3CE00E603C6 /* traderpog */,
+				C4352AA615030EB200FC1A69 /* Resources */,
 				4279DA461501E3CE00E603C6 /* Frameworks */,
 				4279DA441501E3CE00E603C6 /* Products */,
 			);
@@ -95,10 +115,12 @@
 		4279DA4D1501E3CE00E603C6 /* traderpog */ = {
 			isa = PBXGroup;
 			children = (
+				C4352A941502F4C700FC1A69 /* game */,
 				4279DA561501E3CE00E603C6 /* AppDelegate.h */,
 				4279DA571501E3CE00E603C6 /* AppDelegate.m */,
 				C43F95021502EF1400D4E757 /* TradeViewController.h */,
 				C43F95031502EF1400D4E757 /* TradeViewController.m */,
+				4279DA671501E3CE00E603C6 /* TradeViewController.xib */,
 				C43F95051502F12D00D4E757 /* TradeMain.h */,
 				C43F95061502F12D00D4E757 /* TradeMain.m */,
 				C43F95071502F12D00D4E757 /* TradeMain.xib */,
@@ -108,7 +130,6 @@
 				4279DA611501E3CE00E603C6 /* SecondViewController.m */,
 				4279DA631501E3CE00E603C6 /* second.png */,
 				4279DA651501E3CE00E603C6 /* second@2x.png */,
-				4279DA671501E3CE00E603C6 /* FirstViewController.xib */,
 				4279DA6A1501E3CE00E603C6 /* SecondViewController.xib */,
 				4279DA4E1501E3CE00E603C6 /* Supporting Files */,
 			);
@@ -124,6 +145,33 @@
 				4279DA551501E3CE00E603C6 /* traderpog-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4352A941502F4C700FC1A69 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				C4352A961502FD4300FC1A69 /* TradeManager.h */,
+				C4352A971502FD4300FC1A69 /* TradeManager.m */,
+				C4352AA9150315C500FC1A69 /* GameManager.h */,
+				C4352AAA150315C500FC1A69 /* GameManager.m */,
+				C4352AA01502FF5F00FC1A69 /* PlayerPort.h */,
+				C4352AA11502FF5F00FC1A69 /* PlayerPort.m */,
+				C4352AA31503000700FC1A69 /* PriceTable.h */,
+				C4352AA41503000700FC1A69 /* PriceTable.m */,
+				C4352AAC1503189200FC1A69 /* TradePorts.h */,
+				C4352AAD1503189200FC1A69 /* TradePorts.m */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		C4352AA615030EB200FC1A69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4050CE315034351007DEF69 /* SanPan.plist */,
+				C4352AA715030F5D00FC1A69 /* Ponghai.plist */,
+			);
+			name = Resources;
+			path = traderpog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +230,11 @@
 				4279DA5F1501E3CE00E603C6 /* first@2x.png in Resources */,
 				4279DA641501E3CE00E603C6 /* second.png in Resources */,
 				4279DA661501E3CE00E603C6 /* second@2x.png in Resources */,
-				4279DA691501E3CE00E603C6 /* FirstViewController.xib in Resources */,
+				4279DA691501E3CE00E603C6 /* TradeViewController.xib in Resources */,
 				4279DA6C1501E3CE00E603C6 /* SecondViewController.xib in Resources */,
 				C43F95091502F12D00D4E757 /* TradeMain.xib in Resources */,
+				C4352AA815030F5D00FC1A69 /* Ponghai.plist in Resources */,
+				C4050CE415034351007DEF69 /* SanPan.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +250,11 @@
 				4279DA621501E3CE00E603C6 /* SecondViewController.m in Sources */,
 				C43F95041502EF1400D4E757 /* TradeViewController.m in Sources */,
 				C43F95081502F12D00D4E757 /* TradeMain.m in Sources */,
+				C4352A981502FD4300FC1A69 /* TradeManager.m in Sources */,
+				C4352AA21502FF5F00FC1A69 /* PlayerPort.m in Sources */,
+				C4352AA51503000700FC1A69 /* PriceTable.m in Sources */,
+				C4352AAB150315C500FC1A69 /* GameManager.m in Sources */,
+				C4352AAE1503189200FC1A69 /* TradePorts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,12 +269,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4279DA671501E3CE00E603C6 /* FirstViewController.xib */ = {
+		4279DA671501E3CE00E603C6 /* TradeViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4279DA681501E3CE00E603C6 /* en */,
 			);
-			name = FirstViewController.xib;
+			name = TradeViewController.xib;
 			sourceTree = "<group>";
 		};
 		4279DA6A1501E3CE00E603C6 /* SecondViewController.xib */ = {

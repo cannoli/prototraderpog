@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TradeMain : UIViewController
-
+@interface TradeMain : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    IBOutlet UITableView *_tableView;
+}
 @end
