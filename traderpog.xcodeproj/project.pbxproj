@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422855E91503762A00EB52DE /* KualuPumpur.plist in Resources */ = {isa = PBXBuildFile; fileRef = 422855E71503762A00EB52DE /* KualuPumpur.plist */; };
+		422855EA1503762A00EB52DE /* Paris.plist in Resources */ = {isa = PBXBuildFile; fileRef = 422855E81503762A00EB52DE /* Paris.plist */; };
+		422855ED1503765B00EB52DE /* PulauPinong.plist in Resources */ = {isa = PBXBuildFile; fileRef = 422855EC1503765B00EB52DE /* PulauPinong.plist */; };
 		4279DA481501E3CE00E603C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4279DA471501E3CE00E603C6 /* UIKit.framework */; };
 		4279DA4A1501E3CE00E603C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4279DA491501E3CE00E603C6 /* Foundation.framework */; };
 		4279DA4C1501E3CE00E603C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4279DA4B1501E3CE00E603C6 /* CoreGraphics.framework */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422855E71503762A00EB52DE /* KualuPumpur.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KualuPumpur.plist; path = resources/KualuPumpur.plist; sourceTree = "<group>"; };
+		422855E81503762A00EB52DE /* Paris.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Paris.plist; path = resources/Paris.plist; sourceTree = "<group>"; };
+		422855EC1503765B00EB52DE /* PulauPinong.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PulauPinong.plist; path = resources/PulauPinong.plist; sourceTree = "<group>"; };
 		4279DA431501E3CE00E603C6 /* traderpog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traderpog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4279DA471501E3CE00E603C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4279DA491501E3CE00E603C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +173,9 @@
 		C4352AA615030EB200FC1A69 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				422855EC1503765B00EB52DE /* PulauPinong.plist */,
+				422855E71503762A00EB52DE /* KualuPumpur.plist */,
+				422855E81503762A00EB52DE /* Paris.plist */,
 				C4050CE315034351007DEF69 /* SanPan.plist */,
 				C4352AA715030F5D00FC1A69 /* Ponghai.plist */,
 			);
@@ -235,6 +244,9 @@
 				C43F95091502F12D00D4E757 /* TradeMain.xib in Resources */,
 				C4352AA815030F5D00FC1A69 /* Ponghai.plist in Resources */,
 				C4050CE415034351007DEF69 /* SanPan.plist in Resources */,
+				422855E91503762A00EB52DE /* KualuPumpur.plist in Resources */,
+				422855EA1503762A00EB52DE /* Paris.plist in Resources */,
+				422855ED1503765B00EB52DE /* PulauPinong.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

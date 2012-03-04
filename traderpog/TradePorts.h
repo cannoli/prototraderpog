@@ -11,3 +11,5 @@
 extern NSString* kPonghai;
 extern NSString* kPulauPinong;
 extern NSString* kSanPan;
+extern NSString* kParis;
+extern NSString* kKualaPumpur;

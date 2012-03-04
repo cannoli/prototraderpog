@@ -11,3 +11,5 @@
 NSString* kPonghai = @"Ponghai";
 NSString* kPulauPinong = @"PulauPinong";
 NSString* kSanPan = @"SanPan";
+NSString* kParis = @"Paris";
+NSString* kKualaPumpur = @"KualaPumpur";

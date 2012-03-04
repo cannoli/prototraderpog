@@ -8,6 +8,7 @@
 
 #import "TradeManager.h"
 #import "PriceTable.h"
+#import "TradePorts.h"
 
 @interface TradeManager (PrivateMethods)
 - (void) setupPortRegistry;
@@ -47,8 +48,11 @@
 
 - (void) setupPortRegistry
 {
-    [self loadPriceTableForPortName:@"Ponghai"];
-    [self loadPriceTableForPortName:@"SanPan"];
+    [self loadPriceTableForPortName:kPonghai];
+    [self loadPriceTableForPortName:kSanPan];
+    [self loadPriceTableForPortName:kParis];
+    [self loadPriceTableForPortName:kKualaPumpur];
+    [self loadPriceTableForPortName:kPulauPinong];
 }
 
 #pragma mark - queries
